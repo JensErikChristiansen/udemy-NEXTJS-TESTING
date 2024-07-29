@@ -49,6 +49,7 @@
     "@testing-library/jest-dom": "5.16.1",
     "@testing-library/react": "12.1.2",
     "@testing-library/user-event": "13.5.0",
+    "@types/cypress": "^0.1.6",
     "@types/jsonwebtoken": "^8.5.8",
     "@types/node": "^22.0.0",
     "@types/pbkdf2": "^3.1.0",
