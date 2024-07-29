@@ -1,4 +1,3 @@
-import { fakeUserReservations } from './../../fakeData/userReservations';
 /* eslint-disable no-console */
 import { readFakeData } from '@/__tests__/__mocks__/fakeData/';
 import { filenames, writeJSONToFile } from '@/lib/db/db-utils';
