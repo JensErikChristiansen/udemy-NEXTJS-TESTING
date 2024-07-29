@@ -61,7 +61,8 @@
       {
         "printWidth": 80,
         "singleQuote": true,
-        "endOfLine": "auto"
+        "endOfLine": "auto",
+        "trailingComma": true
       }
     ],
     "simple-import-sort/exports": "error",
