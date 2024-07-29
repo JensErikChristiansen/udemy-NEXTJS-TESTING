@@ -60,7 +60,7 @@
       "warn",
       {
         "printWidth": 80,
-        "singleQuote": false,
+        "singleQuote": true,
         "endOfLine": "auto"
       }
     ],
