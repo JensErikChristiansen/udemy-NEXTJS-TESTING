@@ -8,7 +8,7 @@
     "test": "jest --watch",
     "test:ci": "jest --ci",
     "db:reset": "sh scripts/reset-db.sh",
-    "build:test": "npm run db:reset && set NODE_ENV=\"test\" && next build",
+    "build:test": "npm run db:reset && env-cmd -f .env.test.local next build",
     "start:test": "set NODE_ENV=\"test\" && next start",
     "cy:open": "env-cmd -f .env.test.local cypress open",
     "cy:start": "start-server-and-test 'npm run start:test' 3000 'npm run cy:open'",

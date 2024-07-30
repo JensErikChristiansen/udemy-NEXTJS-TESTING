@@ -3,7 +3,7 @@ import { readFakeData } from '@/__tests__/__mocks__/fakeData/';
 import { filenames, writeJSONToFile } from '@/lib/db/db-utils';
 
 export async function resetDB() {
-  const isSafeToReset = process.env.NODE_ENV === 'test';
+  const isSafeToReset = process.env.NODE_ENV === 'test' || process.env.CYPRESS;
 
   if (!isSafeToReset) {
     console.log(
