@@ -17,3 +17,8 @@ it('displays correct band name for band route that existed at build time', () =>
   cy.visit('/bands/1');
   cy.findByRole('heading', { name: 'Shamrock Pete' }).should('exist');
 });
+
+it('displays error for band not in db', () => {
+  cy.task('db:reset').visit('/bands/12345');
+  cy.findByRole('heading', { name: /error: band not found/i }).should('exist');
+});
