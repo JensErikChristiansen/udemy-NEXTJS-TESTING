@@ -11,8 +11,9 @@
     "build:test": "npm run db:reset && env-cmd -f .env.test.local next build",
     "start:test": "env-cmd -f .env.test.local next start",
     "cy:open": "env-cmd -f .env.test.local cypress open",
-    "cy:start": "start-server-and-test 'npm run start:test' 3000 'npm run cy:open'",
-    "cy:build": "npm run build:test && npm run cy:start"
+    "cy:start": "start-server-and-test start:test 3000 cy:open",
+    "cy:build": "npm run build:test && npm run cy:start",
+    "cy:ci": "start-server-and-test start:test 3000 'env-cmd -f .env.test.local cypress run'"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.8.6",
